@@ -1,5 +1,7 @@
 # Expand Testing Playwright Portfolio
 
+[![Playwright quality suite](https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/actions/workflows/playwright.yml)
+
 A maintainable QA automation portfolio built with **TypeScript** and **Playwright Test**, targeting only the public [Expand Testing practice platform](https://practice.expandtesting.com/). The suite demonstrates modern browser automation, React user journeys, REST API contract testing, isolated test data, and CI diagnostics.
 
 ## What this project demonstrates
