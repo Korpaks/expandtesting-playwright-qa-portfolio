@@ -1,0 +1,21 @@
+{
+  "name": "expandtesting-playwright-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript and Playwright Test portfolio for Expand Testing UI and REST API.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui tests/notes-ui",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["playwright", "typescript", "qa", "test-automation", "api-testing"],
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}
