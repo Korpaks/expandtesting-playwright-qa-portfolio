@@ -7,13 +7,13 @@ A maintainable QA automation portfolio built with **TypeScript** and **Playwrigh
 ## Watch the 60-second demo
 
 <p align="center">
-  <a href="https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/releases/tag/v1.0.0">
+  <a href="https://korpaks.github.io/expandtesting-playwright-qa-portfolio/">
     <img src="docs/assets/qa-portfolio-demo-thumbnail.png" alt="Watch Igor Korpak's 60-second QA automation portfolio demo" width="100%">
   </a>
 </p>
 
 <p align="center">
-  <strong><a href="https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/releases/tag/v1.0.0">▶ Watch the full demo and view the release</a></strong>
+  <strong><a href="https://korpaks.github.io/expandtesting-playwright-qa-portfolio/">▶ Play the full demo in your browser</a></strong>
 </p>
 
 ## What this project demonstrates
