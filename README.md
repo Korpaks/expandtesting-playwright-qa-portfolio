@@ -4,6 +4,18 @@
 
 A maintainable QA automation portfolio built with **TypeScript** and **Playwright Test**, targeting only the public [Expand Testing practice platform](https://practice.expandtesting.com/). The suite demonstrates modern browser automation, React user journeys, REST API contract testing, isolated test data, and CI diagnostics.
 
+## Watch the 60-second demo
+
+<p align="center">
+  <a href="https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/releases/tag/v1.0.0">
+    <img src="docs/assets/qa-portfolio-demo-thumbnail.png" alt="Watch Igor Korpak's 60-second QA automation portfolio demo" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/releases/tag/v1.0.0">▶ Watch the full demo and view the release</a></strong>
+</p>
+
 ## What this project demonstrates
 
 - React Notes journeys: registration, authentication, note creation, and deletion.
