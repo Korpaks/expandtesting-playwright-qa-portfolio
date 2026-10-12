@@ -4,6 +4,16 @@
 
 A maintainable QA automation portfolio built with **TypeScript** and **Playwright Test**, targeting only the public [Expand Testing practice platform](https://practice.expandtesting.com/). The suite demonstrates modern browser automation, React user journeys, REST API contract testing, isolated test data, and CI diagnostics.
 
+## Quality evidence at a glance
+
+| Signal | Evidence |
+|---|---|
+| Automated coverage | 30 independent UI and API tests with explicit assertions |
+| CI execution | [GitHub Actions quality suite](https://github.com/Korpaks/expandtesting-playwright-qa-portfolio/actions/workflows/playwright.yml) |
+| Failure diagnostics | HTML report, JUnit XML, screenshots, video, and Playwright traces |
+| Test isolation | Unique synthetic users plus automatic account cleanup |
+| Live proof | [60-second browser demo](https://korpaks.github.io/expandtesting-playwright-qa-portfolio/) |
+
 ## Watch the 60-second demo
 
 <p align="center">
@@ -54,6 +64,21 @@ tests/
 .github/workflows/  GitHub Actions pipeline
 ```
 
+## Architecture
+
+```mermaid
+flowchart LR
+    T[Playwright Test] --> F[Custom fixtures]
+    F --> D[Unique test-data factory]
+    F --> P[Notes page object]
+    F --> A[Typed Notes API client]
+    P --> UI[React Notes and practice UI]
+    A --> API[REST endpoints]
+    F --> C[Automatic account cleanup]
+    T --> R[HTML, JUnit, traces, video]
+    R --> CI[GitHub Actions artifacts]
+```
+
 ## Run locally
 
 Requirements: Node.js 20+ (Node 22 recommended).
@@ -94,6 +119,14 @@ npx playwright show-trace path/to/trace.zip
 ## Scope decisions
 
 This repository intentionally targets one platform so UI and API coverage form a coherent portfolio story. Chromium is the default to keep public CI fast and deterministic. Allure is optional: Playwright HTML and JUnit reports already provide rich diagnostics with fewer moving parts.
+
+## Known boundaries and tradeoffs
+
+- The project validates a public practice service, so availability and behavior remain outside this repository's control.
+- CI intentionally uses Chromium only; cross-browser depth is demonstrated in the separate Toolshop portfolio.
+- Automated checks do not replace exploratory, visual, accessibility, performance, or security testing.
+- Negative coverage stays within harmless validation and authorization cases; it is not penetration testing.
+- Test counts communicate scope, not quality by themselves—the suite prioritizes independent scenarios and meaningful assertions.
 
 ## Responsible use
 
